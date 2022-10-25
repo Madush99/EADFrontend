@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FuelAdd">
+
+<!--    <TextView-->
+<!--        android:id="@+id/shedid1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Shed Phone Number"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/shedId"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="number"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/shedPhone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shed Phone Number"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/shedPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shed Name"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/fuelType1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fuel Type"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/fuelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/fuelStatus1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fuel status"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/fuelStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/satloc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Station Location"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/satloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="#32CD32"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete User"
+        android:background="#FF0000"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>
