@@ -1,3 +1,8 @@
+/**
+ * IT19123950 Madusanka G.A.P
+ * IT19214580 S.M Bulner
+ * 26/10/2022
+ */
 package com.example.fuelappead.model;
 
 import com.google.gson.annotations.Expose;

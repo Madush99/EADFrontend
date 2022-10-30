@@ -15,25 +15,74 @@
         android:textSize="34dp"
         android:textColor="@color/black"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:text="Welcome to FEQ "
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:fontFamily="cursive"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/f1"
+        />
+
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginBottom="10dp"
-        android:text="Sign In"
+        android:text="Search For Nearest Gas Station"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/round_button"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/btnInq"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:text="Check in Q"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp"-->
+<!--        android:backgroundTint="@color/purple_200"-->
+<!--        android:background="@drawable/round_button"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/btncheckout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:text="Exit From Queue"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/round_button"
+        />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:text="Log Out"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:backgroundTint="@color/purple_200"
         android:background="@drawable/round_button"
         />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:queryHint="Search Here"
-        android:iconifiedByDefault="false"
-        android:background="@drawable/cardviewedittext"
-        android:layout_alignParentTop="true"/>
+
 
 </LinearLayout>

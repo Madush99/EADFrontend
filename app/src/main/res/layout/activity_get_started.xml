@@ -11,10 +11,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Madusanka"
+        android:text="FEQ"
         android:textSize="50dp"
         android:textAlignment="center"
         android:paddingTop="50dp"
+        android:fontFamily="cursive"
         android:paddingBottom="1dp"
         />
 

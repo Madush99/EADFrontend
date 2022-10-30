@@ -1,3 +1,8 @@
+/**
+ * IT19123950 Madusanka G.A.P
+ * IT19214580 S.M Bulner
+ * 26/10/2022
+ */
 package com.example.fuelappead.DBHelper;
 
 import android.content.ContentValues;
@@ -16,6 +21,10 @@ public class DBHelper extends SQLiteOpenHelper {
         super(context, "fuelapp.db", null, 1);
     }
 
+    /**
+     *
+     * create table users
+     */
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("create table users(username TEXT, phonenumber TEXT primary key, role TEXT, password TEXT)");
@@ -26,6 +35,9 @@ public class DBHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("drop table if exists users");
     }
 
+    /**
+     *User Registration to DB
+     */
     public Boolean RegisterUser(String username, String phonenumber,String role, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
         ContentValues values = new ContentValues();
@@ -42,6 +54,11 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    /**
+     *
+     * Username validation
+     *
+     */
     public Boolean usernameCheck(String username){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from users where username=?", new String[] {username});
@@ -52,6 +69,9 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
     }
 
+    /**
+     * login check
+     */
     public Boolean usernamepassCheck(String username, String password){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from users where phonenumber=? and password=?", new String[] {username,password});
@@ -61,6 +81,10 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+
+    /**
+     * User role check
+     */
     public Boolean userRoleCheck(String username, String password){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from users where phonenumber=? and password=? and role='Shed Owner'", new String[] {username,password});

@@ -13,13 +13,16 @@
         android:theme="@style/Theme.FuelAppEAD"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".CheckoutQ"
+            android:exported="false" />
+        <activity
+            android:name=".CheckInQ"
+            android:exported="false" />
+        <activity
             android:name=".SearchGasStation"
             android:exported="false" />
         <activity
             android:name=".Register"
-            android:exported="false" />
-        <activity
-            android:name=".FuelByShed"
             android:exported="false" />
         <activity
             android:name=".FuelAdd"

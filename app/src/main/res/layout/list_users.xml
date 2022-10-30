@@ -19,69 +19,50 @@
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="24dp">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:text="Gas Station Details"
+                android:text="User Details"
                 android:textAlignment="center"
                 android:textColor="@color/purple_500"
                 android:fontFamily="cursive"
-                android:textSize="35dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"
-                />
-
-            <TextView
-                android:id="@+id/txtFuelStatus"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textColor="@color/purple_700"
-                android:padding="3dp"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 />
             <TextView
-                android:id="@+id/txtShedId"
+                android:id="@+id/txtuserId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:textStyle="bold"
                 />
 
             <TextView
-                android:id="@+id/txtShedPhone"
+                android:id="@+id/txtShedUserPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:textStyle="bold"
                 />
 
             <TextView
-                android:id="@+id/txtShedname"
+                android:id="@+id/txtuserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:textStyle="bold"
                 />
 
             <TextView
-                android:id="@+id/txtFuelType"
+                android:id="@+id/txtuserPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:textStyle="bold"
                 />
 
-
             <TextView
-                android:id="@+id/txtStationLocation"
+                android:id="@+id/txtvehType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:textStyle="bold"
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

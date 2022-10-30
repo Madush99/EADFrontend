@@ -1,3 +1,8 @@
+/**
+ * IT19123950 Madusanka G.A.P
+ * IT19214580 S.M Bulner
+ * 26/10/2022
+ */
 package com.example.fuelappead;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -64,6 +69,9 @@ public class FuelAdd extends AppCompatActivity {
         fuelStatus.setText(fuel_Status);
         stationLocation.setText(sat_loc);
 
+        /**
+         * onClick function to save
+         */
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,7 +96,9 @@ public class FuelAdd extends AppCompatActivity {
 
             }
         });
-
+/**
+ * onclick function delete
+ */
         btnDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -101,6 +111,10 @@ public class FuelAdd extends AppCompatActivity {
         });
     }
 
+    /**
+     *
+     * Add Fuel Station
+     */
     public void addFuel(Fuel f){
         Call<Fuel> call = fuelService.addFuel(f);
         call.enqueue(new Callback<Fuel>() {
@@ -118,6 +132,10 @@ public class FuelAdd extends AppCompatActivity {
         });
     }
 
+    /**
+     *
+     *Update Station details
+     */
     public void updateFuelStatus(String id, Fuel f){
 
         Call<Fuel> call = fuelService.updateFuel(id,f);
@@ -136,6 +154,10 @@ public class FuelAdd extends AppCompatActivity {
         });
     }
 
+    /**
+     *
+     * Delete Station details
+     */
     public void fuelDelete (String id){
         Call<Fuel> call = fuelService.deleteFuel(id);
         call.enqueue(new Callback<Fuel>() {

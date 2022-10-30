@@ -1,4 +1,10 @@
+/**
+ * IT19123950 Madusanka G.A.P
+ * IT19214580 S.M Bulner
+ * 26/10/2022
+ */
 package com.example.fuelappead;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +27,7 @@ public class Login extends AppCompatActivity {
     TextView txtSignUp;
     EditText username, password;
     Button signin;
-//    Spinner dropdown;
+
     DBHelper DB;
 
     @Override
@@ -34,17 +40,14 @@ public class Login extends AppCompatActivity {
         signin = findViewById(R.id.signin1);
         txtSignUp = findViewById(R.id.signupText);
         DB = new DBHelper(this);
-//        dropdown = findViewById(R.id.spinner2);
-//        String[] items = new String[]{"User", "Shed Owner"};
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.spinner_item1, items);
-//        dropdown.setAdapter(adapter);
-//        dropdown.setOnItemSelectedListener(new Register.Listener_Of_Selecting_Room_Spinner());
 
+/**
+ * Function for login activity
+ */
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String user = username.getText().toString();
-                String role = Listener_Of_Selecting_Room_Spinner.RoomType;
                 String pass = password.getText().toString();
 
                 if(TextUtils.isEmpty(user) || TextUtils.isEmpty(pass)){
@@ -56,18 +59,16 @@ public class Login extends AppCompatActivity {
                         Boolean userRoleCheck = DB.userRoleCheck(user, pass);
                         if(userRoleCheck == true){
                             Intent intent = new Intent(getApplicationContext(), ShedOwnerHome.class);
-                            intent.putExtra("username", role);
+
                             intent.putExtra("phoneno", user );
                             startActivity(intent);
                         }else {
                             Intent intent = new Intent(getApplicationContext(), UserHome.class);
-                            intent.putExtra("username", role);
+
                             intent.putExtra("phoneno", user );
                             startActivity(intent);
                         }
-//                        Intent intent = new Intent(getApplicationContext(), UserHome.class);
-//                        intent.putExtra("username", user);
-//                        startActivity(intent);
+
                     }else {
                         Toast.makeText(Login.this, "Login Failed", Toast.LENGTH_SHORT).show();
                     }
@@ -83,21 +84,5 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-    public static class Listener_Of_Selecting_Room_Spinner implements AdapterView.OnItemSelectedListener
-    {
-        static String RoomType;
 
-        public void onItemSelected(AdapterView<?> parent, View view, int pos,long id)
-        {
-            // By using this you can get the position of item which you
-            // have selected from the dropdown
-
-            RoomType = (parent.getItemAtPosition(pos)).toString();
-        }
-
-        public void onNothingSelected(AdapterView<?> parent)
-        {
-            // Do nothing.
-        }
-    };
 }

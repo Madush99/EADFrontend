@@ -1,3 +1,8 @@
+/**
+ * IT19123950 Madusanka G.A.P
+ * IT19214580 S.M Bulner
+ * 26/10/2022
+ */
 package com.example.fuelappead;
 
 import android.content.Context;
@@ -45,11 +50,11 @@ public class FuelAdapter extends ArrayAdapter<Fuel> {
         TextView txtStationLocation = rowView.findViewById(R.id.txtStationLocation);
 
       //  txtShedId.setText((String.format("Shed ID: %s", fuels.get(pos).getId())));
-        txtShedPhone.setText(String.format("Shed Phone: %s", fuels.get(pos).getShedPhoneNo()));
-        txtShedName.setText(String.format("Shed NAme: %s", fuels.get(pos).getShedName()));
-        txtFuelType.setText(String.format("fuel Type: %s", fuels.get(pos).getFuelType()));
+        txtShedPhone.setText(String.format("Gas Station Phone: %s", fuels.get(pos).getShedPhoneNo()));
+        txtShedName.setText(String.format("Gas Station Name: %s", fuels.get(pos).getShedName()));
+        txtFuelType.setText(String.format("Fuel Type: %s", fuels.get(pos).getFuelType()));
         txtFuelStatus.setText(String.format("Fuel Status: %s", fuels.get(pos).getFuelStatus()));
-        txtStationLocation.setText(String.format("StationLocation: %s", fuels.get(pos).getShedLocation()));
+        txtStationLocation.setText(String.format("Gas Station Location: %s", fuels.get(pos).getShedLocation()));
 
         rowView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +65,7 @@ public class FuelAdapter extends ArrayAdapter<Fuel> {
                 intent.putExtra("shed_name", String.valueOf(fuels.get(pos).getShedName()));
                 intent.putExtra("fuel_type", String.valueOf(fuels.get(pos).getFuelType()));
                 intent.putExtra("fuel_status", String.valueOf(fuels.get(pos).getFuelStatus()));
+                intent.putExtra("station_location", String.valueOf((fuels.get(pos).getShedLocation())));
                 context.startActivity(intent);
             }
         });

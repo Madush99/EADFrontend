@@ -16,6 +16,8 @@
         <entry key="app/src/main/res/drawable/round_gradient_button.xml" value="0.1145" />
         <entry key="app/src/main/res/drawable/roundgradient_button.xml" value="0.1145" />
         <entry key="app/src/main/res/drawable/spinner_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_check_in_q.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/activity_checkout_q.xml" value="0.2504854368932039" />
         <entry key="app/src/main/res/layout/activity_fuel_add.xml" value="0.24322916666666666" />
         <entry key="app/src/main/res/layout/activity_fuel_by_shed.xml" value="0.24322916666666666" />
         <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.24322916666666666" />
@@ -23,10 +25,13 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24322916666666666" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_search_gas_station.xml" value="0.24322916666666666" />
-        <entry key="app/src/main/res/layout/activity_shed_owner_home.xml" value="0.136" />
+        <entry key="app/src/main/res/layout/activity_shed_owner_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_user_home.xml" value="0.11828774062816616" />
         <entry key="app/src/main/res/layout/fuel_list2.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/fuel_listuser.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/list_fuel.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/list_users.xml" value="0.1109375" />
+        <entry key="app/src/main/res/layout/que_list.xml" value="0.20516304347826086" />
         <entry key="app/src/main/res/layout/spinner_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/spinner_item1.xml" value="0.24322916666666666" />
       </map>

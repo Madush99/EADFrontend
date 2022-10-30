@@ -1,3 +1,8 @@
+/**
+ * IT19123950 Madusanka G.A.P
+ * IT19214580 S.M Bulner
+ * 26/10/2022
+ */
 package com.example.fuelappead;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,13 +44,16 @@ public class Register extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.spinner_item, items);
         dropdown.setAdapter(adapter);
         dropdown.setOnItemSelectedListener(new Listener_Of_Selecting_Room_Spinner());
-        
+
+        /**
+         * onclick function to register
+         */
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String user = username.getText().toString();
                 String phone = phonenumber.getText().toString();
-                String role = Listener_Of_Selecting_Room_Spinner.RoomType;
+                String role = Listener_Of_Selecting_Room_Spinner.Usertype;
                 String pass = password.getText().toString();
                 String confirmpass = confirmpassword.getText().toString();
 
@@ -95,16 +103,19 @@ public class Register extends AppCompatActivity {
 
     }
 
+    /**
+     * Dropdown function for select user type
+     */
     public static class Listener_Of_Selecting_Room_Spinner implements AdapterView.OnItemSelectedListener
     {
-        static String RoomType;
+        static String Usertype;
 
         public void onItemSelected(AdapterView<?> parent, View view, int pos,long id)
         {
             // By using this you can get the position of item which you
             // have selected from the dropdown
 
-            RoomType = (parent.getItemAtPosition(pos)).toString();
+            Usertype = (parent.getItemAtPosition(pos)).toString();
         }
 
         public void onNothingSelected(AdapterView<?> parent)

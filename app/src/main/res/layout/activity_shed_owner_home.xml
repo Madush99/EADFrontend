@@ -8,51 +8,53 @@
     android:orientation="vertical"
     tools:context=".ShedOwnerHome">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/shedname"
-        android:text="Name"
-        android:textSize="34dp"
-        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/shedname1"
-        android:text="Shed"
+        android:text="Gas Station Admin"
         android:textSize="34dp"
-        android:textColor="@color/black"/>
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"/>
 
     <Button
         android:id="@+id/btnAddUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add User"
-        android:background="#BA55D3"
-        android:textColor="#ffffff"
-        android:layout_marginTop="5dp"
+        android:text="Add Gas Station"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/round_button"
         android:layout_marginBottom="5dp"
         />
 
-    <Button
-        android:id="@+id/btnGetUsersList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fetch users"
-        android:background="#32CD32"
-        android:textColor="#ffffff"
-        android:layout_marginBottom="5dp"
-        />
-    <Button
-        android:id="@+id/btnGetFuelbyshed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FuelBy shed"
-        android:background="#32CD32"
-        android:textColor="#ffffff"
-        android:layout_marginBottom="5dp"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/btnGetUsersList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Fetch users"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp"-->
+<!--        android:backgroundTint="@color/purple_200"-->
+<!--        android:background="@drawable/round_button"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/btnGetFuelbyshed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="FuelBy shed"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp"-->
+<!--        android:backgroundTint="@color/purple_200"-->
+<!--        android:background="@drawable/round_button"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        />-->
 
     <ListView
         android:id="@+id/listView"

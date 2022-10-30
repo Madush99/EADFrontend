@@ -1,3 +1,8 @@
+/**
+ * IT19123950 Madusanka G.A.P
+ * IT19214580 S.M Bulner
+ * 26/10/2022
+ */
 package com.example.fuelappead;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,6 +46,9 @@ public class SearchGasStation extends AppCompatActivity {
         searchlocBtn = findViewById(R.id.btnSearchLocation);
         fuelService = ApiUtills.getFuelService();
 
+        /**
+         * onclick function to search nearest gas station
+         */
         searchlocBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +58,10 @@ public class SearchGasStation extends AppCompatActivity {
         });
     }
 
+    /**
+     *
+     * Search nearest gas station by location
+     */
     public void searchShedLocation (String location){
 
         Call<List<Fuel>> call = fuelService.searchLocation(location);

@@ -19,25 +19,33 @@
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="24dp">
-    <TextView
-        android:id="@+id/txtShedId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="3dp"
-        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Gas Station Details"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:fontFamily="cursive"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
 
     <TextView
         android:id="@+id/txtShedPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="3dp"
+        android:textStyle="bold"
         />
+
 
     <TextView
         android:id="@+id/txtShedname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="3dp"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -45,18 +53,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="3dp"
+        android:textStyle="bold"
         />
     <TextView
         android:id="@+id/txtFuelStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="3dp"
+        android:textStyle="bold"
         />
             <TextView
                 android:id="@+id/txtStationLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
+                android:textStyle="bold"
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
